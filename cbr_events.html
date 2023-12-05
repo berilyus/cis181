@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cbr_style.css" />
+  <link rel="stylesheet" href="cbr_layouts.css" />
+  <title>Event Schedule</title>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
+    <div class="col-1-1 nav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <nav class="horizontal">
+            <ul>
+                <li class="menu menu-item"><a href="cbr_home.html">Home</a></li>
+                <li class="menu menu-item"><a href="#">About</a></li>
+                <li class="menu menu-item"><a href="cbr_faq.html">FAQ</a></li>
+                <li class="menu menu-item"><a href="cbr_events.html">Events</a></li>
+                <li class="menu menu-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-1-2 sidenav others">
+        <h3 id="learn">Learn more about:</h3>
+        <ul class="other-rescues">
+            <li class="rescue" id="packers"><a href="https://www.packers.com">Wisconsin Packers Rescue</a></li>
+            <li class="rescue" id="cardinal"><a href="https://www.azcardinals.com">Arizona Cardinals Rescue</a></li>
+        </ul>
+    </div>
+
+  <div class="container col-1-6">
+    <table class="event-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#event1">2023-12-10</a></td>
+          <td><a href="#event1">Bears vs. Packers</a></td>
+        </tr>
+        <tr>
+          <td><a href="#event2">2023-12-15</a></td>
+          <td><a href="#event2">Cubs vs. Cardinals</a></td>
+        </tr>
+        <!-- Add more events as needed -->
+      </tbody>
+    </table>
+
+    <div id="event1" class="event-info">
+      <img src="https://www.bearsinsider.com/wp-content/uploads/2023/09/packers-vs-bears-780x436.jpg" alt="Bears vs. Packers">
+      <h2>Bears vs. Packers</h2>
+      <p>Description: An exciting football game between the Chicago Bears and Green Bay Packers.</p>
+      <p>Date/Time: 2023-12-10, 7:00 PM</p>
+      <p>Location: Soldier Field, Chicago</p>
+      <p>Price: $50</p>
+      <a href="ticketing_system_link">Buy Tickets</a>
+    </div>
+
+    <div id="event2" class="event-info">
+      <img src="https://wp.clutchpoints.com/wp-content/uploads/2022/06/Cubs-vs.-Cardinals-prediction-odds-and-pick.jpg" alt="Cubs vs. Cardinals">
+      <h2>Cubs vs. Cardinals</h2>
+      <p>Description: A thrilling baseball game between the Chicago Cubs and St. Louis Cardinals.</p>
+      <p>Date/Time: 2023-12-15, 6:30 PM</p>
+      <p>Location: Wrigley Field, Chicago</p>
+      <p>Price: $40</p>
+      <a href="ticketing_system_link">Buy Tickets</a>
+    </div>
+
+    <!-- Add more event info sections as I may need -->
+
+  </div>
+
+</body>
+</html>
