@@ -1,59 +1,87 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-	<!--
-		Author: Vincent Pawela
-		Date: 11/5/2023
-		
-		Filename: cbr_faq.html
-		FAQ page and Adoption Inquiry/Application
+<head>
+<!--
+     Author: Vincent Pawela
+     Date: 11/5/2023
 
-		Content that describes the adoption fees, and some policies, by answering frequently asked questions.
-		May add resources (hyperlinks) to websites about bears. One question about the adoption process should
-		take user to the inquiry form which is in the same page.
+     Filename: cbr_faq.html
+     FAQ page and Adoption Inquiry/Application
 
-		Underneath there will be the web form for adoption inquiry/application.
-		You can research normal cat and dog rescues' adoption inquiry/application forms for inspiration, but make
-		it a bear version.
+     Content that describes the adoption fees, and some policies, by answering frequently asked questions.
+     May add resources (hyperlinks) to websites about bears. One question about the adoption process should
+     take user to the inquiry form which is in the same page.
 
-		This role also designs and implements color schemes and backgrounds for all pages and devices.
-	-->
-		<title>Chicago Bear Rescue FAQs</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link href="cbr_style.css" rel="stylesheet"/>
-	</head>
-	
-	<body>
-		<header>
-			<h1>Chicago Bear Rescue FAQs</h1>
-		</header>
-		
-		<div class="faq-item">
-			<div class="question">What is the mission of Chicago Bear Rescue?</div>
-			<div class="answer">Chicago Bear Rescue is committed to rescuing and rehabilitating bears in need, providing them with proper care, and working towards their eventual release into suitable habitats.</div>
-		</div>
-		
-		<div class="faq-item">
-			<div class="question">How can I adopt a rescued bear?</div>
-			<div class="answer">We do not facilitate the adoption of bears as pets. Our goal is to reintroduce rehabilitated bears into the wild or place them in reputable wildlife sanctuaries where they can live in a natural environment.</div>
-		</div>
+     Underneath there will be the web form for adoption inquiry/application.
+     You can research normal cat and dog rescues' adoption inquiry/application forms for inspiration, but make
+     it a bear version.
 
-		<div class="faq-item">
-			<div class="question">Can I visit the bear rescue facility?</div>
-			<div class="answer">Currently, our facilities are not open to the public for safety and security reasons. However, we periodically organize educational events and fundraisers. Stay tuned to our website for updates on these events.</div>
-		</div>
-
-		<div class="faq-item">
-			<div class="question">How are bears rescued in urban areas like Chicago?</div>
-			<div class="answer">We work closely with local authorities, wildlife experts, and concerned citizens to identify bears in distress. Trained professionals are then dispatched to safely rescue and transport the bears to our rehabilitation facilities.</div>
-		</div>
-
-		<div class="faq-item">
-			<div class="question">How can I report a bear in distress?</div>
-			<div class="answer">If you encounter a bear in distress in the Chicago area, please contact our emergency hotline at [emergency number]. Do not attempt to approach or handle the bear yourself, as it may pose risks to both you and the bear.</div>
-		</div>
-		
-	</body>
-	
+     This role also designs and implements color schemes and backgrounds for all pages and devices.
+-->
+<title>Chicago Bear Rescue FAQs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="cbr_style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Chicago Bear Rescue FAQs</h1>
+    </header>
+    <div class="faq-item">
+      <div class="question">What is the mission of Chicago Bear Rescue?</div>
+      <div class="answer">Chicago Bear Rescue is committed to rescuing and rehabilitating bears in need, providing them with proper care, and working towards their eventual release into suitable habitats.</div>
+    </div>
+    <div class="faq-item">
+      <div class="question">How can I adopt a rescued bear?</div>
+      <div class="answer">Please visit this page on our website to see all available bears for adoption.</div>
+      <!--In the above div element add a link to the adoption webpage-->
+    </div>
+    <div class="faq-item">
+      <div class="question">What is the adoption fee?</div>
+      <div class="answer">The adoption fee varies, please <a href="#inquiry-form">contact us</a> for details. </div>
+    </div>
+    <div class="faq-item">
+      <div class="question">Can I visit the bear rescue facility?</div>
+      <div class="answer">Currently, our facilities are not open to the public for safety and security reasons. However, we periodically organize educational events and fundraisers. Stay tuned to our website for updates on these events.</div>
+      <!--In the above div element add a link to the calendar webpage-->
+    </div>
+    <div class="faq-item">
+      <div class="question">How are bears rescued in urban areas like Chicago?</div>
+      <div class="answer">We work closely with local authorities, wildlife experts, and concerned citizens to identify bears in distress. Trained professionals are then dispatched to safely rescue and transport the bears to our rehabilitation facilities.</div>
+    </div>
+    <div class="faq-item">
+      <div class="question">How can I report a bear in distress?</div>
+      <div class="answer">If you encounter a bear in distress in the Chicago area, please contact our emergency hotline at <a href="tel:312-555-0102">312-555-0102</a>. Do not attempt to approach or handle the bear yourself, as it may pose risks to both you and the bear. </div>
+    </div>
+    <h2 id="inquiry-form">Adoption Inquiry</h2>
+    <form action="/submit-inquiry" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="message">What is your question?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+    <h2 id="inquiry-form">Adoption Application</h2>
+    <form action="/submit-inquiry" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="street-address">Street address</label>
+      <input type="text" id="street-address" name="street-address" required>
+      <label for="postal-code">ZIP or postal code</label>
+      <input class="postal-code" id="postal-code" name="postal-code" required>
+      <label for="city">City</label>
+      <input required type="text" id="city" name="city" required>
+      <label for="message">Why would you like to adopt a bear?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
 </html>

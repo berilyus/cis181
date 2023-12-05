@@ -56,3 +56,28 @@ h1 {
     margin-bottom: 25px;
 	color: var(--dark-moss-green);
 }
+
+form {
+  background-color: var(--mountbatten-pink);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: var(--timberwolf);
+  font-family: Arial;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
