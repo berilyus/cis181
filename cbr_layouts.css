@@ -34,7 +34,7 @@ body {
 
 .menu-item {
   float: left;
-  width: 20%;
+  width: 15%;
   list-style-type: none;
   height: 100%;
 }
@@ -60,6 +60,11 @@ div[class^="col-"] {
 div.col-1-1 {width: 100%;}
 div.col-1-2 {width: 20%;}
 div.col-1-6 {width: 60%;}
+
+div#takoda {
+  margin: auto;
+  width: 50%;
+}
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}
