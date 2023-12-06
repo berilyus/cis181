@@ -20,6 +20,8 @@ body {
 .horizontal {
   width: 100%;
   color: whitesmoke;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .menu {
@@ -34,7 +36,7 @@ body {
 
 .menu-item {
   float: left;
-  width: 15%;
+  width: 13%;
   list-style-type: none;
   height: 100%;
 }
