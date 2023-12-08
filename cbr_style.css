@@ -17,11 +17,6 @@ html {
   background-color: var(--timberwolf);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 10px;
-    padding: 10px;
-}
 
 p {
   font-family: "Georgia", sans-serif;

@@ -3,11 +3,9 @@
 Chicago Bear Rescue Stylesheet
 */
 
-/* Remove when done developing
 div {
   outline: 1px solid red;
 }
-*/
 
 body {
   display: -webkit-flex;
