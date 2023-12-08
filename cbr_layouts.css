@@ -3,11 +3,6 @@
 Chicago Bear Rescue Stylesheet
 */
 
-/* Remove when done developing
-div {
-  outline: 1px solid red;
-}
-*/
 
 body {
   display: -webkit-flex;
@@ -36,7 +31,7 @@ body {
 
 .menu-item {
   float: left;
-  width: 13%;
+  width: 16.3%;
   list-style-type: none;
   height: 100%;
 }
@@ -62,7 +57,7 @@ div[class^="col-"] {
 div.col-1-1 {width: 100%;}
 div.col-1-2 {width: 20%;}
 div.col-1-6 {width: 60%;}
-
+div.col-1-8 {width: 80%;}
 div#takoda {
   margin: auto;
   width: 50%;

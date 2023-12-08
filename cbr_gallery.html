@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="cbr_style.css" rel="stylesheet"/>
     <link href="cbr_layouts.css" rel="stylesheet"/>
-    <link href="cbr_gallery.css" rel="stylesheet"/>
-
-    <script src="cbr_slides.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -19,91 +16,122 @@
 </header>
 
 <div class="col-1-1 nav">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-</div>
 <nav class="horizontal">
-<ul>
-<li class="menu menu-item"><a href="cbr_home.html">Home</a></li>
-<li class="menu menu-item"><a href="#">About</a></li>
-<li class="menu menu-item"><a href="cbr_faq.html">FAQ</a></li>
-<li class="menu menu-item"><a href="cbr_store.html">Products</a></li>
-<li class="menu menu-item"><a href="cbr_events.html">Events</a></li>
-<li class="menu menu-item"><a href="cbr_gallery.html">Gallery</a></li>
-<li class="menu menu-item"><a href="#">Contact</a></li>
-</ul>
+    <ul>
+        <li class="menu menu-item"><a href="cbr_home.html">Home</a></li>
+        <li class="menu menu-item"><a href="cbr_faq.html">FAQ</a></li>
+        <li class="menu menu-item"><a href="cbr_store.html">Products</a></li>
+        <li class="menu menu-item"><a href="cbr_events.html">Events</a></li>
+        <li class="menu menu-item"><a href="cbr_gallery.html">Gallery</a></li>
+    </ul>
 </nav>
 </div>
 
-<h3 id="bear-gallery">Gallery</h3>
-<!-- Gallery source:
-     https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
-<div class="container bear-gallery">
- <!-- Full-width images with number text -->
-  <div class="slideshow" id="mandy">
-    <div class="numbertext">1 / 6</div>
-      <img src="bearselfie1.jpg" style="width:100%">
-  </div>
-
-  <div class="slideshow">
-    <div class="numbertext">2 / 6</div>
-      <img src="bearselfie2.jpg" style="width:100%">
-  </div>
-
-  <div class="slideshow">
-    <div class="numbertext">3 / 6</div>
-      <img src="bearselfie3.jpg" style="width:100%">
-  </div>
-
-  <div class="slideshow">
-    <div class="numbertext">4 / 6</div>
-      <img src="bearselfie4.png" style="width:100% height:50%">
-  </div>
-
-  <div class="slideshow">
-    <div class="numbertext">5 / 6</div>
-      <img src="bearnadette.png" style="width:100%">
-  </div>
-
-  <div class="slideshow">
-    <div class="numbertext">6 / 6</div>
-      <img src="bearnardo.png" style="width:100%">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="bearselfie1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mandy">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="bearselfie2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Adolfo">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="bearselfie3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Stuart">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="bearselfie4.png" style="width:100%" onclick="currentSlide(4)" alt="Natasha">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="bearnadette.png" style="width:100%" onclick="currentSlide(5)" alt="Bearnadette">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="bearnardo.png" style="width:100%" onclick="currentSlide(6)" alt="Bearnardo">
-    </div>
-  </div>
+<div class="col-1-2 sidenav">
+    <h2 id="inquiry-form">Inquire Here: </h2>
+    <form action="/submit-inquiry" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="message">What is your question?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit Inquiry</button>
+    </form>
 </div>
+<div class="col-1-6">
+<h3 id="title">OUR BEARS</h3>
+<div class="bear-gallery">
+    <div class="ourbears">
+        <div class="bear-img">
+            <img id="mandy" src="bearselfie1.jpg" style="width:100%">
+        </div>
+        <div class="roster">
+            <p>Mandy likes long walks on Lakeshore Trail, and eating only the bellies of fish.
+        </div>
+  </div>
+
+  <div class="ourbears">
+      <div class="bear-img">
+          <img id="stuart" src="bearselfie2.jpg" style="width:100%">
+      </div>
+      <div class="roster">
+          <p>Stuart likes playing in the snow when not hibernating. He also enjoys a good fruit salad.</p>
+      </div>
+  </div>
+
+  <div class="ourbears">
+      <div class="bear-img">
+          <img id="adolfo" src="bearselfie3.jpg" style="width:100%">
+      </div>
+      <div class="roster">
+          <p>Adolfo likes to scratch his back or have someone else do it. He is also a curious boy.</p>
+      </div>
+  </div>
+
+  <div class="ourbears">
+      <div class="bear-img">
+          <img id="natasha" alt="natasha" src="bearselfie4.png" style="width:75%">
+      </div>
+      <div class="roster">
+          <p>Natasha likes to partake in human activities such as watching TV and visiting to Lincoln Park Zoo to wave at other bears.</p>
+      </div>
+  </div>
+
+  <div class="ourbears">
+      <div class="bear-img">
+          <img id="bearnadette" src="bearnadette.png" style="width:100%">
+      </div>
+      <div class="roster">
+          <p>Bearnadette likes to ponder the meaning of life while nibbling on plants. She also likes to socialize with other animals when she gets a chance.</p>
+      </div>
+  </div>
+
+  <div class="ourbears">
+      <div class="bear-img">
+          <img id="bearnardo" src="bearnardo.png" style="width:100%">
+      </div>
+      <div class="roster">
+          <p>Clearly, Bearnardo like a good pool to splash in. Or a hot tub in which he can relax. Any body of water. </p>
+      </div>
+  </div>
+
+
+
+</div>
+</div>
+<div class="col-1-2 sidenav">
+    <h2 id="inquiry-form">Adoption Application</h2>
+    <form action="/submit-inquiry" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="street-address">Street address</label>
+      <input type="text" id="street-address" name="street-address" required>
+      <label for="postal-code">ZIP or postal code</label>
+      <input class="postal-code" id="postal-code" name="postal-code" required>
+      <label for="city">City</label>
+      <input required type="text" id="city" name="city" required>
+      <label for="message">Why would you like to adopt a bear?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<footer class="contact-info">
+    <ul id="footer">
+        <li>
+            <a class="contact" href="tel:6121312218">Phone: (612) 131-2218</a>
+        </li>
+        <li>
+            <a class="contact" href="mailto:info@chicagobearrescue.org">Email: info@chicagobearrescue.org</a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
