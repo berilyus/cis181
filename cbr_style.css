@@ -17,6 +17,12 @@ html {
   background-color: var(--timberwolf);
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+  display: flex;
+  box-shadow: 2px 2px 1px #888888;
+}
 
 p {
   font-family: "Georgia", sans-serif;
@@ -42,13 +48,44 @@ footer {
 
 .container {
   max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: auto;
   position: relative;
 }
 
+a.contact {
+  color: white;
+  text-decoration: none;
+}
+ul#footer {
+  list-style-type: none;
+}
 .bear-gallery {
   background: lightgrey;
+}
+
+p#welcome {
+  margin: 1% 5%;
+}
+
+.ourbears {
+  width: 40%;
+  height: auto;
+  margin: 5% 5%;
+  flex: wrap;
+  float: left;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.roster {
+  margin-top: 3em;
+  border-top: 2px var(--mountbatten-pink) solid;
+}
+
+
+.bear-img {
+  width: 50%;
+  height: 50%;
+  margin: auto;
 }
 
 .event-table {
@@ -112,6 +149,14 @@ h1 {
     color: transparent;
     text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
 
+}
+
+#title {
+  text-align: center;
+  font-size: 1.7em;
+  position: relative;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
 h3#learn {
