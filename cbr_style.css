@@ -73,9 +73,12 @@ p#welcome {
   margin: 5% 5%;
   flex: wrap;
   float: left;
-  box-shadow: 10px 10px 8px #888888;
+  box-shadow: 1px 1px 8px #888888;
 }
 
+.ourbears:hover{
+  box-shadow: 10px 10px 8px var(--mountbatten-pink);
+}
 .roster {
   margin-top: 3em;
   border-top: 2px var(--mountbatten-pink) solid;
@@ -188,30 +191,39 @@ h3 {
   border-radius: 15px;
 }
 
-.others li#cardinal{
+/*.others li#cardinal{
   list-style: none;
-  padding: 50px 50px 50px 150px;
+  padding: 0px 0px 10em 100px;
   background-image: url(
     "cardinals.png");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left;
   background-size: 100px;
-}
+}*/
 
-.others li:hover {
+.others li#packers:hover, li#cardinal:hover {
   background: var(--timberwolf);
   color: #fff;
   border-radius: 15px;
 }
 
-.others li#packers{
+img#packers, img#cardinals{
+  width: 50px;
+  height: 50px;
+}
+
+/*.others li#packers{
   list-style: none;
-  padding: 50px 150px;
+  padding: 0px 0px 10em 100px;
   background-image: url(
     "packers.png");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left;
   background-size: 100px;
+}*/
+.rescue {
+  list-style-type: none;
+  margin-bottom: 5%;
 }
 .rescue a {
   color: #333;
