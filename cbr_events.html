@@ -25,9 +25,9 @@
     <div class="col-1-2 sidenav others">
         <h3 id="learn">Learn more about our rivals:</h3>
         <ul class="other-rescues">
-            <li class="rescue" id="packers"><a href="https://www.packers.com" target="_blank"><img id="packers" src="packers.png"/></a></li>
+            <li class="rescue" id="packers"><a href="https://www.packers.com" target="_blank"><img id="packers" src="https://media.tenor.com/pT_Ki-360SYAAAAi/gameday-battle-of-the-bays.gif"/></a></li>
             <li class="rescue">Wisconsin Packers Rescue</li>
-            <li class="rescue" id="cardinal"><a href="https://www.azcardinals.com" target="_blank"><img id="cardinals" src="cardinals.png"/></a></li>
+            <li class="rescue" id="cardinal"><a href="https://www.azcardinals.com" target="_blank"><img id="cardinals" src="https://media1.tenor.com/m/MUj7XPPofpIAAAAC/cardinals-sparkle.gif"/></a></li>
             <li class="rescue">Arizona Cardinals Rescue</li>
         </ul>
     </div>
@@ -44,34 +44,42 @@
       <tbody>
         <tr>
           <td><a href="#event1">2023-12-10</a></td>
-          <td><a href="#event1">Bears vs. Packers</a></td>
+          <td>
+            <span style="display: inline-block;">
+              <img src="https://giffiles.alphacoders.com/668/6686.gif" alt="Football" style="width: 20px; height: 20px; margin-right: 5px;">
+          <a href="#event1">Bears vs. Packers</a> <!-- Added Gif next to event names-->
+          </td>
         </tr>
         <tr>
           <td><a href="#event2">2023-12-15</a></td>
-          <td><a href="#event2">Cubs vs. Cardinals</a></td>
+          <td>
+            <span style="display: inline-block;">
+              <img src="https://giffiles.alphacoders.com/668/6686.gif" alt="Football" style="width: 20px; height: 20px; margin-right: 5px;">
+            <a href="#event2">Cubs vs. Cardinals</a> <!-- Added Gif next to event names-->
+            </td>
         </tr>
         <!-- Add more events as needed -->
       </tbody>
     </table>
 
     <div id="event1" class="event-info">
-      <img src="https://www.bearsinsider.com/wp-content/uploads/2023/09/packers-vs-bears-780x436.jpg" alt="Bears vs. Packers">
+      <img src="https://www.bearsinsider.com/wp-content/uploads/2023/09/packers-vs-bears-780x436.jpg" width="50%" height="100%" alt="Bears vs. Packers">
       <h2>Bears vs. Packers</h2>
       <p>Description: An exciting football game between the Chicago Bears and Green Bay Packers.</p>
-      <p>Date/Time: 2023-12-10, 7:00 PM</p>
-      <p>Location: Soldier Field, Chicago</p>
-      <p>Price: $50</p>
-      <a href="ticketing_system_link">Buy Tickets</a>
+      <p>Date/Time: TBA</p>
+      <p>Location: Lambeau Field, Green Bay, WI</p>
+      <p>Price: Starting from $93 (Subject to change)</p>
+      <a id="buyTicketEvent1" href="#">Buy Tickets</a>
     </div>
 
     <div id="event2" class="event-info">
-      <img src="https://wp.clutchpoints.com/wp-content/uploads/2022/06/Cubs-vs.-Cardinals-prediction-odds-and-pick.jpg" alt="Cubs vs. Cardinals">
-      <h2>Cubs vs. Cardinals</h2>
-      <p>Description: A thrilling baseball game between the Chicago Cubs and St. Louis Cardinals.</p>
-      <p>Date/Time: 2023-12-15, 6:30 PM</p>
-      <p>Location: Wrigley Field, Chicago</p>
-      <p>Price: $40</p>
-      <a href="ticketing_system_link">Buy Tickets</a>
+      <img src="bearsvscardinals.png" alt="Bears vs. Cardinals">
+      <h2>Bears vs. Cardinals</h2>
+      <p>Description: A thrilling football game between the Chicago Bears and Arizona Cardinals.</p>
+      <p>Date/Time: 12-24-2023, 3:25 PM</p>
+      <p>Location: Soldier Field, Chicago, IL</p>
+      <p>Price: Starting from $30 (Subject to change)</p>
+      <a id="buyTicketEvent2" href="#">Buy Tickets</a>
     </div>
 
     <!-- Add more event info sections as I may need -->
@@ -87,5 +95,17 @@
           </li>
       </ul>
   </footer>
+  <script>
+    function setBuyTicketLink(eventId, ticketLink) {
+      var buyTicketLink = document.getElementById(eventId);
+      if (buyTicketLink) {
+        buyTicketLink.href = ticketLink;
+      }
+    }
+
+    // Added "Buy Tickets" links for each event
+    setBuyTicketLink("buyTicketEvent1", "https://www.ticketmaster.com/green-bay-packers-vs-chicago-bears-green-bay-wisconsin/event/07005E94A1901947");
+    setBuyTicketLink("buyTicketEvent2", "https://www.ticketmaster.com/chicago-bears-vs-arizona-cardinals/event/04005E6EDFC5268D?refArtist=K8vZ9171ou7&f_simplified_filter=true");
+  </script>
 </body>
 </html>
